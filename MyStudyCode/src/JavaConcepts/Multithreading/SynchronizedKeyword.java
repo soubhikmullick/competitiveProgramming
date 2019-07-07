@@ -1,4 +1,4 @@
-package Multithreading;
+package JavaConcepts.Multithreading;
 
 class Incrementor implements Runnable{
     private int count = 0;

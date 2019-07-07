@@ -1,4 +1,4 @@
-package Multithreading;
+package JavaConcepts.Multithreading;
 
 class Volatile implements Runnable {
 

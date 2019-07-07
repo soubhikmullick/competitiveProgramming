@@ -1,4 +1,4 @@
-package Multithreading;
+package JavaConcepts.Multithreading;
 
 import java.util.ArrayList;
 import java.util.List;

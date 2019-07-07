@@ -1,4 +1,4 @@
-package Multithreading;
+package JavaConcepts.Multithreading;
 
 class Runner extends Thread {
     public void run() {

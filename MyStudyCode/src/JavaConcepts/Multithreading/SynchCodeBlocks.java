@@ -1,4 +1,4 @@
-package Multithreading;
+package JavaConcepts.Multithreading;
 
 public class SynchCodeBlocks {
     private int count1 = 0;
