@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package dynaminc_programming;
 
 public class TrappingRainWater {
     public static void main(String[] args) {

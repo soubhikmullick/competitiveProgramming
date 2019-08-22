@@ -1,4 +1,4 @@
-package JavaConcepts.Multithreading;
+package java_concepts.Multithreading;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

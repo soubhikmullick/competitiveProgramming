@@ -1,3 +1,5 @@
+package CTCI;
+
 import java.util.Scanner;
 
 public class FindingShortestDist2DArr {

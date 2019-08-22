@@ -1,6 +1,4 @@
-package DynamicProgramming;
-
-import java.util.Arrays;
+package dynaminc_programming;
 
 public class CoinChangeToFindMaxCombinations {
     public static void main(String[] args) {

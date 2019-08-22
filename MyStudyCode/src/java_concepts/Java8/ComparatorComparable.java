@@ -1,4 +1,4 @@
-package JavaConcepts.Java8;
+package java_concepts.Java8;
 
 import java.util.*;
 

@@ -1,4 +1,5 @@
-import java.util.HashSet;
+import java.math.BigDecimal;
+import java.util.*;
 
 public class test {
 
@@ -14,22 +15,23 @@ public class test {
     }
 
     public static void main(String[] args) {
-        int i=1,j=2;
-//        System.out.println(i+j+" ");
-        String text = "as-df";
-        String[] test = text.split("-");
-        System.out.println(test[0]+" "+test[1]);
 
-        HashSet<Integer> hs = new HashSet<>();
-        hs.add(1);
-        hs.add(2);hs.add(1);
-        hs.add(3);
-        hs.add(4);
+       String s = "1231";
+        System.out.println(s.length());
+        char[] test = new char[]{'p','e','r','f','e','c','t',' ','m','a','k','e','s',' ','p','r','a','c','t','i','c','e'};
 
-        hs.forEach(
-                (oo) -> {System.out.println(oo);}
-        );
+    }
 
+    public static void setBigDecimal(BigDecimal b) {
+        b = b.add(new BigDecimal("10"));
+    }
+
+    static class A {
+        String a = null;
+        A(String a) {
+            this.a = a;
+        }
+        public String get(){return a;}
     }
 
 }

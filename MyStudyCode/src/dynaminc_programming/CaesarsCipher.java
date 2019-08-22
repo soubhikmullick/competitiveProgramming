@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package dynaminc_programming;
 
 public class CaesarsCipher {
     private final int CHAR_LIMIT = 127;
