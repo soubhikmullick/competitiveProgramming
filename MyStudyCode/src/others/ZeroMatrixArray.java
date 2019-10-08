@@ -1,3 +1,5 @@
+package others;
+
 public class ZeroMatrixArray {
     public static void main(String[] args) {
         int[][] arr = { {1,1,1},

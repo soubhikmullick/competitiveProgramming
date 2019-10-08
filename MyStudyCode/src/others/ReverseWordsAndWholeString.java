@@ -1,3 +1,5 @@
+package others;
+
 public class ReverseWordsAndWholeString {
     static char[] reverseWords(char[] arr) {
         int first = 0;

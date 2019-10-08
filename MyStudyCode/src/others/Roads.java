@@ -1,4 +1,9 @@
-import java.util.*;
+package others;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
 class Roads {
     public static void main(String args[] ) throws Exception {
         Scanner sc = new Scanner(System.in);

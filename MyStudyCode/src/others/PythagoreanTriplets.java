@@ -1,6 +1,7 @@
-import java.util.HashSet;
-import java.util.*;
+package others;
 
+import java.util.HashSet;
+import java.util.Scanner;
 
 public class PythagoreanTriplets {
 

@@ -1,4 +1,7 @@
-import java.util.*;
+package others;
+
+import java.util.HashMap;
+import java.util.Map;
 
 class LFUCache {
     private int key;
@@ -17,14 +20,14 @@ class LFUCache {
     }
 
     public int get(int key) {
-//        LFUCache lf = lfuCache.g();
+//        others.LFUCache lf = lfuCache.g();
         return 0;
     }
 
     public void put(int key, int value) {
 
         if(lfuCache.size() < capacity) {
-//            lfuCache.push(new LFUCache(key, value));
+//            lfuCache.push(new others.LFUCache(key, value));
        } else {
 
         }

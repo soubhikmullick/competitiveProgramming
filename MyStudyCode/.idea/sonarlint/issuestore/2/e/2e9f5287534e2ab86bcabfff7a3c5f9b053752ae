@@ -1,13 +1,0 @@
-
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(óÎ °ùÿÿÿÿ
-Xsquid:UselessImportCheck".Remove this unused import 'java.util.HashSet'.(Ê‚êX8•Ñ¶ÇÈ-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(İè¬øÿÿÿÿ
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(˜Ã®â
-N
-squid:S106
-"9Replace this use of System.out or System.err by a logger.(¸ØïU
-usquid:S1171	"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(‘û¤‘ÿÿÿÿÿ8€ï¸ÇÈ-

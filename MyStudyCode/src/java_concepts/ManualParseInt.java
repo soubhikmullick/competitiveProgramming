@@ -1,7 +1,5 @@
 package java_concepts;
 
-import java.util.Objects;
-
 public class ManualParseInt {
 
     public static void main(String[] args) {
