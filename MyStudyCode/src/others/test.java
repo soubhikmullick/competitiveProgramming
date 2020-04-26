@@ -1,6 +1,6 @@
 package others;
 
-import java.util.HashSet;
+import java.util.*;
 
 public class test {
 
@@ -21,13 +21,7 @@ public class test {
 
     public static void main(String[] args) {
         test s = new test();
-        test d = s;
-        test a = d;
-//        System.out.println(a==s);
 
-        HashSet<String> hs = new HashSet<>();
-        hs.add("test");
-        System.out.println(hs.contains("test"));
     }
 
 }

@@ -45,12 +45,7 @@ public class SynchCodeBlocks {
                 synchCodeBlocks.incre1();
             }
         });
-        Thread t2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                synchCodeBlocks.incre2();
-            }
-        });
+        Thread t2 = new Thread(() -> synchCodeBlocks.incre2());
 
         t1.start();
         t2.start();
