@@ -1,4 +1,4 @@
-package data_structure;
+package data_structure.trees;
 /* A Java Program to find distance between n1 and n2
 using one traversal */
 public class DistanceBetweenTwoNode

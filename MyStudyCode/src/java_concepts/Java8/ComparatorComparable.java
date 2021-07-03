@@ -1,8 +1,12 @@
 package java_concepts.Java8;
 
 import java.util.*;
+import java.util.function.Function;
+import java.util.function.ToDoubleFunction;
+import java.util.function.ToIntFunction;
+import java.util.function.ToLongFunction;
 
-class Employee implements Comparable<Employee> {
+class Employee implements Comparable<Employee>{
     int age;
     String name;
 
@@ -20,17 +24,46 @@ class Employee implements Comparable<Employee> {
     public String toString() {
         return "age = "+this.age+"; name = "+this.name;
     }
+
+}
+
+class Student implements Comparable<Student>{
+    int age;
+    String name;
+    int num;
+
+    public Student(int i, String soubhik,int i1) {
+        this.age = i;
+        this.name = soubhik;
+        this.num = i1;
+    }
+
+    @Override
+    public int compareTo(Student student) {
+        return this.age-student.age;
+    }
 }
 
 public class ComparatorComparable {
     public static void main(String[] args) {
-        Employee emp[] = new Employee[3];
+        Employee[] emp = new Employee[3];
         emp[0]= new Employee(21, "Shikha");
         emp[1] = new Employee(24, "Amrit");
         emp[2] = new Employee(18, "Shukla");
 
         Arrays.sort(emp);
         System.out.println(Arrays.toString(emp));
+
+        List<Student> arrayList = new ArrayList<>();
+        arrayList.add(new Student(1,"Soubhik",10));
+        arrayList.add(new Student(2,"Anamika", 9));
+        arrayList.add(new Student(3,"Joy", 8));
+        arrayList.add(new Student(4,"Rony", 7));
+
+        Collections.sort(arrayList, Comparator.comparingInt(student -> student.num));
+        Collections.sort(arrayList);
+        arrayList.forEach(student -> System.out.println(student.age+" "+student.name));
+
 
         Map<String, Integer> map = new HashMap<>();
         map.put("one", 1);
@@ -39,17 +72,19 @@ public class ComparatorComparable {
         map.put("four", 4);
 
 //        Comparator<HashMap.Entry<String, Integer>> hashmapValue = Comparator.comparingInt(Map.Entry::getValue);
-        Comparator<HashMap.Entry<String, Integer>> hashmapValue = (o1, o2) -> o1.getValue()-o2.getValue();
-        Comparator<HashMap.Entry<String, Integer>> hashMapKey = Comparator.comparing(Map.Entry::getKey);
+//        Comparator<HashMap.Entry<String, Integer>> hashmapValue = (o1, o2) -> o1.getValue()-o2.getValue();
+//        Comparator<HashMap.Entry<String, Integer>> hashMapKey = Comparator.comparing(Map.Entry::getKey);
         List<Map.Entry<String, Integer>> listVal = new ArrayList<>(map.entrySet());
-        Collections.sort(listVal, hashmapValue);
+        Collections.sort(listVal, Comparator.comparingInt(Map.Entry::getValue));
         for(Map.Entry<String, Integer> ma : listVal){
             System.out.println(ma.getKey()+" "+ma.getValue());
         }
-        Collections.sort(listVal, hashMapKey);
+        Collections.sort(listVal, Comparator.comparing(Map.Entry::getKey));
         for(Map.Entry<String, Integer> ma : listVal){
             System.out.println(ma.getKey()+" "+ma.getValue());
         }
+
+
 
     }
 }

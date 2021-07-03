@@ -1,5 +1,14 @@
 package others;
 
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int item) {
+        data = item;
+        left = right = null;
+    }
+}
 public class heightOfTree {
 
     Node root;
@@ -15,9 +24,7 @@ public class heightOfTree {
             /* compute the depth of each subtree */
             return Math.max(maxDepth(node.left, height + 1, maxH),
             maxDepth(node.right, height + 1, maxH));
-
         }
-
     }
 
     /* Driver program to others.test above functions */
@@ -31,16 +38,5 @@ public class heightOfTree {
         tree.root.left.right = new Node(5);
 
         System.out.println("Height of tree is : " + tree.maxDepth(tree.root, 1, 1));
-    }
-
-}
-
-class Node {
-    int data;
-    Node left, right;
-
-    Node(int item) {
-        data = item;
-        left = right = null;
     }
 }
