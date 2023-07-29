@@ -27,4 +27,22 @@ public class AllSubsetsOfArray {
     return ans;
   }
 
+  public void recur(int[] nums, int i, List<Integer> list, List<List<Integer>> solution) {
+    if(i == nums.length) {
+      solution.add(list);
+      return;
+    } else {
+      list.add(nums[i]);
+      recur(nums, i + 1, new ArrayList<>(list), solution);
+
+      list.remove(list.size()-1);
+      recur(nums, i + 1, new ArrayList<>(list), solution);
+    }
+  }
+  public List<List<Integer>> subsets(int[] nums) {
+    List<List<Integer>> ans = new ArrayList<>();
+    recur(nums, 0, new ArrayList<>(), ans);
+    return ans;
+  }
+
 }

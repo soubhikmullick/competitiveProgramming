@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class Permutations {
   public static void main(String[] args) {
-    int[] temp = {1,2,3};
+    int[] temp = {1,2,3,4,5,6};
     System.out.println(permute(temp));
   }
 

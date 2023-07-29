@@ -9,3 +9,6 @@ MyStudyCode/src/.idea/sonarlint/*
 MyStudyCode/src/out/production/MyStudyCode/.idea/sonarlint/issuestore/0/0/*
 MyStudyCode/src/out/production/MyStudyCode/.idea/sonarlint/issuestore/0/9/09d3e055b4b6ad7566276c9e9ae92c71456bc4e8
 MyStudyCode/src/out/production/MyStudyCode/.idea/sonarlint/issuestore/*
+.idea/*
+MyStudyCode/out/production/MyStudyCode/.idea/*
+MyStudyCode/out/production/MyStudyCode/out/production/MyStudyCode/.idea/sonarlint/issuestore/*

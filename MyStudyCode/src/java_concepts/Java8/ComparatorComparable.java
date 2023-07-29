@@ -53,17 +53,19 @@ public class ComparatorComparable {
 
         Arrays.sort(emp);
         System.out.println(Arrays.toString(emp));
-
+        System.out.println();
         List<Student> arrayList = new ArrayList<>();
         arrayList.add(new Student(1,"Soubhik",10));
         arrayList.add(new Student(2,"Anamika", 9));
         arrayList.add(new Student(3,"Joy", 8));
         arrayList.add(new Student(4,"Rony", 7));
 
-        Collections.sort(arrayList, Comparator.comparingInt(student -> student.num));
+        arrayList.sort(Comparator.comparingInt(student -> student.num));
+        arrayList.forEach(student -> System.out.print(student.age+" "+student.name+" "));
+        System.out.println();
         Collections.sort(arrayList);
-        arrayList.forEach(student -> System.out.println(student.age+" "+student.name));
-
+        arrayList.forEach(student -> System.out.print(student.age+" "+student.name+" "));
+        System.out.println();
 
         Map<String, Integer> map = new HashMap<>();
         map.put("one", 1);
@@ -77,14 +79,13 @@ public class ComparatorComparable {
         List<Map.Entry<String, Integer>> listVal = new ArrayList<>(map.entrySet());
         Collections.sort(listVal, Comparator.comparingInt(Map.Entry::getValue));
         for(Map.Entry<String, Integer> ma : listVal){
-            System.out.println(ma.getKey()+" "+ma.getValue());
+            System.out.print(ma.getKey()+" "+ma.getValue()+" ");
         }
-        Collections.sort(listVal, Comparator.comparing(Map.Entry::getKey));
+        System.out.println();
+        Collections.sort(listVal, Map.Entry.comparingByKey());
         for(Map.Entry<String, Integer> ma : listVal){
-            System.out.println(ma.getKey()+" "+ma.getValue());
+            System.out.print(ma.getKey()+" "+ma.getValue()+" ");
         }
-
-
-
+        System.out.println();
     }
 }
