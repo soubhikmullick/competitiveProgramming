@@ -55,17 +55,18 @@ public class ComparatorComparable {
         System.out.println(Arrays.toString(emp));
         System.out.println();
         List<Student> arrayList = new ArrayList<>();
-        arrayList.add(new Student(1,"Soubhik",10));
-        arrayList.add(new Student(2,"Anamika", 9));
-        arrayList.add(new Student(3,"Joy", 8));
-        arrayList.add(new Student(4,"Rony", 7));
+        arrayList.add(new Student(1,"USD",10));
+        arrayList.add(new Student(2,"INR", 9));
+        arrayList.add(new Student(3,"USD", 8));
+        arrayList.add(new Student(4,"INR", 7));
 
-        arrayList.sort(Comparator.comparingInt(student -> student.num));
+//        arrayList.sort(Comparator.comparingInt(student -> student.num));
         arrayList.forEach(student -> System.out.print(student.age+" "+student.name+" "));
         System.out.println();
-        Collections.sort(arrayList);
+        arrayList.sort((o1, o2) -> o1.name.equals(o2.name)?0:1);
         arrayList.forEach(student -> System.out.print(student.age+" "+student.name+" "));
         System.out.println();
+
 
         Map<String, Integer> map = new HashMap<>();
         map.put("one", 1);

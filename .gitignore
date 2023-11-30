@@ -12,3 +12,8 @@ MyStudyCode/src/out/production/MyStudyCode/.idea/sonarlint/issuestore/*
 .idea/*
 MyStudyCode/out/production/MyStudyCode/.idea/*
 MyStudyCode/out/production/MyStudyCode/out/production/MyStudyCode/.idea/sonarlint/issuestore/*
+*.iml
+MyStudyCode/.idea/*
+MyStudyCode/.idea/*.*
+MyStudyCode/.idea/sonarlint/issuestore/index.pb
+*.pb

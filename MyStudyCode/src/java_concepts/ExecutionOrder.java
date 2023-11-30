@@ -26,7 +26,5 @@ public class ExecutionOrder {
     public static void main(String[] args) {
         System.out.println("main");
         ExecutionOrder eo = new ExecutionOrder();
-        System.out.println("Apple".compareTo("Banana"));
-        Object obj;
     }
 }
